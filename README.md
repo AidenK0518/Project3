@@ -13,11 +13,19 @@ The program uses a local LLM in parallel with a web scraping program. The local 
 # Possible Errors
 
 1. The results only will say unknown.
+
    Cause: The AI is producing a response that is not one of the three that we should be getting.
+
    Solution: Attempt to rerun first, if that does not work, go into sentiment_analyzer.py and in prompt, strengthen it (add words like "only respond in one word")
+
 2. The results are not going into results.txt
+   
    Cause: It is unable to find the file to write to.
+
    Solution: Check the spelling of results.txt to verify the file name is correct
+
 3. No headlines are being scraped.
+   
    Cause: It is unable to read urls.txt
+
    Solution: Check the spelling of urls.txt to verify the file name is correct. If it is, check to see if there are any urls inside of the text file and save the text document.
